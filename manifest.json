@@ -1,0 +1,44 @@
+{
+  "type": "theme",
+  "id": "com.example.paper-ink-theme",
+  "name": "Paper Ink",
+  "version": "1.0.0",
+  "themeApiVersion": "1",
+  "description": "A warm, eye-friendly paper theme with a monospace, terminal-flavored dark mode.",
+  "locales": {
+    "zh-CN": {
+      "name": "纸墨",
+      "description": "暖纸底色的护眼主题，暗色为墨绿终端质感，正文与代码等宽字体。"
+    }
+  },
+  "author": "ZhenYu-Jiang",
+  "modes": ["light", "dark"],
+  "light": {
+    "color.background": "#f6f2e9",
+    "color.surface": "#fdfaf3",
+    "color.surfaceMuted": "#eee8da",
+    "color.text": "#33302a",
+    "color.textMuted": "#7d7669",
+    "color.border": "#e0d8c7",
+    "color.accent": "#3f7d5c",
+    "color.accentForeground": "#ffffff",
+    "font.body": "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif",
+    "font.mono": "ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Menlo, Consolas, monospace",
+    "radius.medium": "0.5rem",
+    "editor.contentWidth": "760px"
+  },
+  "dark": {
+    "color.background": "#1c201e",
+    "color.surface": "#232825",
+    "color.surfaceMuted": "#2b312d",
+    "color.text": "#e6e3d9",
+    "color.textMuted": "#9aa49a",
+    "color.border": "#3a423c",
+    "color.accent": "#6fbe94",
+    "color.accentForeground": "#142019",
+    "font.body": "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif",
+    "font.mono": "ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Menlo, Consolas, monospace",
+    "radius.medium": "0.5rem",
+    "editor.contentWidth": "760px"
+  }
+}
