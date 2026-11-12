@@ -2,30 +2,36 @@
   "type": "theme",
   "id": "com.example.paper-ink-theme",
   "name": "Paper Ink",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "themeApiVersion": "1",
-  "description": "A warm, eye-friendly paper theme with a monospace, terminal-flavored dark mode.",
+  "description": "Warm paper and deep green colors with readable typography and improved text contrast.",
   "locales": {
     "zh-CN": {
       "name": "纸墨",
-      "description": "暖纸底色的护眼主题，暗色为墨绿终端质感，正文与代码等宽字体。"
+      "description": "暖纸与墨绿双配色，优化长文阅读的字号、行距与文字对比度。"
     }
   },
   "author": "ZhenYu-Jiang",
-  "modes": ["light", "dark"],
+  "modes": [
+    "light",
+    "dark"
+  ],
   "light": {
     "color.background": "#f6f2e9",
     "color.surface": "#fdfaf3",
     "color.surfaceMuted": "#eee8da",
     "color.text": "#33302a",
-    "color.textMuted": "#7d7669",
+    "color.textMuted": "#6b6356",
     "color.border": "#e0d8c7",
-    "color.accent": "#3f7d5c",
+    "color.accent": "#356b50",
     "color.accentForeground": "#ffffff",
     "font.body": "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif",
     "font.mono": "ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Menlo, Consolas, monospace",
     "radius.medium": "0.5rem",
-    "editor.contentWidth": "760px"
+    "editor.contentWidth": "800px",
+    "font.size": "16px",
+    "lineHeight.body": "1.75",
+    "density.scale": "1"
   },
   "dark": {
     "color.background": "#1c201e",
@@ -39,6 +45,9 @@
     "font.body": "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif",
     "font.mono": "ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Menlo, Consolas, monospace",
     "radius.medium": "0.5rem",
-    "editor.contentWidth": "760px"
+    "editor.contentWidth": "800px",
+    "font.size": "16px",
+    "lineHeight.body": "1.75",
+    "density.scale": "1"
   }
 }
