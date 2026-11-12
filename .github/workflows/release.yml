@@ -33,7 +33,7 @@ jobs:
         run: |
           RELEASE_TAG=$(node -p "JSON.parse(require('fs').readFileSync('manifest.json')).version")
           export RELEASE_TAG
-          node --input-type=module -e "import fs from 'node:fs'; const m=JSON.parse(fs.readFileSync('manifest.json')); if(m.version!==process.env.RELEASE_TAG) throw new Error('Tag and manifest version differ'); for(const f of ['manifest.json','main.js','styles.css']) if(!fs.statSync(f).isFile()) throw new Error('Missing asset: '+f);"
+          node --input-type=module -e "import fs from 'node:fs'; const m=JSON.parse(fs.readFileSync('manifest.json')); if(m.type!=='theme' || m.version!==process.env.RELEASE_TAG) throw new Error('Invalid theme type or version'); if(!fs.statSync('manifest.json').isFile()) throw new Error('Missing theme manifest');"
           if ! git show-ref --verify --quiet "refs/tags/$RELEASE_TAG"; then
             echo 'Version has no published Git tag yet; skipping release.'
             exit 0
